@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="page__content">
+                <!-- main content-->
+                <section class="login">
+                    <div class="login__content">
+                        <div class="login__wrapper">
+                            <div class="login__info">
+                                <div class="login__logo"><img src="./images/logo.png" alt=""></div>
+                                <div class="login__subtitle">CỔNG THÔNG TIN DU LỊCH</div>
+                                <div class="login__title">Huyện Đan Phượng</div>
+                            </div>
+                            <form class="login__form">
+                                <h1 class="login__heading">Đăng nhập</h1>
+                                <div class="mb-3">
+                                    <label class="form-label">Tên đăng nhập/ Email</label>
+                                    <div class="input-group custom-input-group error-field">
+                                        <input class="form-control" type="text" placeholder="Tên"><span class="input-group-text"><i class="fal fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Mật khẩu</label>
+                                    <div class="input-group custom-input-group js-password-field">
+                                        <input class="form-control" type="password" placeholder="Mật khẩu">
+                                        <button class="input-group-text" type="button"><i class="fal fa-fw fa-eye"></i></button>
+                                        <!-- todo hapk click to toggle eye-->
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="checkbox-styled">
+                                        <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="pl-1">Lưu mật khẩu</span>
+                                    </label>
+                                </div>
+                                <div class="mb-4 text-danger" style="margin-top: -16px;">Tên đăng nhập sai, nhập lại</div>
+                                <div class="text-center mb-4">
+                                    <button class="login__btn button button--primary" type="submit">Đăng nhập</button>
+                                </div>
+                                <div class="text-center">
+                                    <div class="mb-2">Hoặc đăng nhập qua</div>
+                                    <div><a class="login__social-btn" href="#!"><img src="./images/icon-google.png" alt=""></a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="login__footer">© 2024 UBND huyện Đan Phượng</div>
+                    </div>
+                    <div class="login__banner"><img src="./images/login-banner.jpg" alt=""></div>
+                </section>
+            </div>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>

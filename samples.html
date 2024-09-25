@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="h-logo" href="./index.html"><img src="./images/logo.png" alt="" />
+                                <div class="h-logo__text"><span>Số hóa</span><span>Đan Phượng</span></div>
+                            </a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="h-logo" href="./index.html"><img src="./images/logo.png" alt="" />
+                                                <div class="h-logo__text"><span>Số hóa</span><span>Đan Phượng</span></div>
+                                            </a>
+                                            <button class="btn-toggle js-navbar-toggle ms-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Không gian 360</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./products.html">Hiện vật 3D</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./projects.html">Điểm đến</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./distribution.html">Tuyến du lịch</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Sản phẩm</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Lễ hội</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./news.html">Tin tức</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="./posts.html">Bài viết</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Thư viện</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <button class="input-group-text"><i class="far fa-search"></i></button>
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                    </div>
+                                </form>
+                                <button class="h-btn search-btn" type="button"><i class="fal fa-fw fa-search"></i></button><a class="h-btn ms-3" href="#!"><i class="fal fa-fw fa-user"></i></a>
+                                <button class="btn-toggle d-xl-none js-navbar-toggle ms-3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <nav class="breadcrumb-wrapper">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fal fa-fw fa-home me-2"></i><span>Trang chủ</span></a></li>
+                            <li class="breadcrumb-item active">Hiện vật 3D</li>
+                        </ol>
+                    </div>
+                </nav>
+                <section class="s-products pt-10 pb-60">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="s-products__subtitle">Hiện vật</div>
+                                <h1 class="s-products__title">3D</h1>
+                                <div class="s-products__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam</div>
+                                <form class="p-filter" action="#!">
+                                    <div class="search-field">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                            <button class="input-group-text"><i class="fal fa-fw fa-search"></i></button>
+                                        </div>
+                                        <div class="search-field__tags"><span class="search-field__tag"><span>Cụm di tích A</span><span><i class="far fa-fw fa-times-circle"></i></span></span><span class="search-field__tag"><span>Cụm di tích B</span><span><i class="far fa-fw fa-times-circle"></i></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="p-filter__menu mt-4 mt-lg-40">
+                                        <ul class="menu">
+                                            <li class="menu-item"><span class="menu-link">Cụm di tích 1</span><span class="menu-toggle"></span>
+                                                <div class="menu menu-sub">
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích A</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích B</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích C</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item"><span class="menu-link">Cụm di tích 2</span><span class="menu-toggle"></span>
+                                                <div class="menu menu-sub">
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích A</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích B</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích C</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item"><span class="menu-link">Cụm di tích 3</span><span class="menu-toggle"></span>
+                                                <div class="menu menu-sub">
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích A</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích B</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích C</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item"><span class="menu-link">Cụm di tích 4</span><span class="menu-toggle"></span>
+                                                <div class="menu menu-sub">
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích A</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích B</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label class="checkbox-styled">
+                                                            <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="ml-1">Cụm di tích C</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row g-3 g-xl-30">
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-6">
+                                        <article class="product"><a class="product__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                                            <div class="product__body">
+                                                <h3 class="product__title"><a href="./product-detail.html">Lorem ipsum dolor</a></h3>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <nav class="d-flex justify-content-center mt-30">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled"><a class="page-link" href="#!"><i class="fal fa-angle-left"></i></a></li>
+                                        <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!"><i class="fal fa-angle-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="footer__inner"><img class="footer__bg-2" src="./images/footer-bg-2.png" alt="" /><img class="footer__bg-3" src="./images/footer-bg-3.png" alt="" />
+                    <div class="container">
+                        <div class="footer__heading">CỔNG THÔNG TIN DU LỊCH<br />HUYỆN ĐAN PHƯỢNG - TP. HÀ NỘI</div>
+                        <ul class="f-contact">
+                            <li class="f-contact__item"><i class="fal fa-fw fa-map-marker-alt me-2"></i><span>Số 105 Phố Tây Sơn - thị trấn Phùng huyện Đan Phượng</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-phone me-2"></i><a href="tel:02433886384">024. 33886384</a></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-envelope me-2"></i><span>Fax: 024. 33886384</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-user me-2"></i><span>Người phát ngôn: Đồng chí Lê Thanh Nam -Chủ tịch UBND huyện</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-user me-2"></i><span>Chịu trách nhiệm nội dung: Đồng chí: Đào Thị Hồng -Phó Chủ tịch UBND huyện</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">© 2024 UBND huyện Đan Phượng</div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>

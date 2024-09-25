@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="h-logo" href="./index.html"><img src="./images/logo.png" alt="" />
+                                <div class="h-logo__text"><span>Số hóa</span><span>Đan Phượng</span></div>
+                            </a>
+                            <div class="header__elements">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="h-logo" href="./index.html"><img src="./images/logo.png" alt="" />
+                                                <div class="h-logo__text"><span>Số hóa</span><span>Đan Phượng</span></div>
+                                            </a>
+                                            <button class="btn-toggle js-navbar-toggle ms-auto"></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <ul class="menu menu-root">
+                                                <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Không gian 360</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Dropdown</a><span class="menu-toggle"></span>
+                                                            <ul class="menu menu-sub menu-sub-2">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./products.html">Hiện vật 3D</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./projects.html">Điểm đến</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./distribution.html">Tuyến du lịch</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Sản phẩm</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Lễ hội</a>
+                                                </li>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./news.html">Tin tức</a><span class="menu-toggle"></span>
+                                                    <ul class="menu menu-sub">
+                                                        <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                                        </li>
+                                                        <li class="menu-item"><a class="menu-link" href="./posts.html">Bài viết</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./news.html">Thư viện</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <div class="input-group">
+                                        <button class="input-group-text"><i class="far fa-search"></i></button>
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm..." />
+                                    </div>
+                                </form>
+                                <button class="h-btn search-btn" type="button"><i class="fal fa-fw fa-search"></i></button><a class="h-btn ms-3" href="#!"><i class="fal fa-fw fa-user"></i></a>
+                                <button class="btn-toggle d-xl-none js-navbar-toggle ms-3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <section class="h-banner"><img class="h-banner__bg" src="./images/banner.jpg" alt="">
+                    <div class="h-banner__wrapper">
+                        <div class="container">
+                            <div class="h-banner__inner">
+                                <div class="h-banner__logo"><img src="./images/logo.png" alt=""></div>
+                                <div class="h-banner__label">CỔNG THÔNG TIN DU LỊCH</div>
+                                <div class="h-banner__name">Huyện Đan Phượng</div>
+                                <div class="h-banner__btn-wrap"><a class="h-banner__btn" href="#!"><span>Xem thêm</span><i class="fal fa-fw fa-arrow-circle-down"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about section">
+                    <div class="container">
+                        <div class="about__inner"><img class="about__bg" src="./images/about-bg.png" alt="">
+                            <div class="row">
+                                <div class="col-lg-5 mb-4 mb-lg-0">
+                                    <h2 class="about__title section__title">Đan Phượng</h2>
+                                    <div class="about__subtitle">Đôi nét về một huyện của Hà Nội</div>
+                                    <div class="about__content">
+                                        <p>"<strong>Nằm ở phía Tây Bắc thủ đô Hà Nội, Đan Phượng là một huyện thuộc Hà Nội.</strong> Đan Phượng cách trung tâm thành phố khoảng 20km theo trục đường quốc lộ 32. Huyện Đan Phượng nằm tiếp giáp với 5 quận huyện của Hà Nội:</p>
+                                        <p class="fw-700">- Phía Bắc giáp huyện Mê Linh, ranh giới là sông Hồng<br>- Phía Nam giáp huyện Hoài Đức<br>- Phía Đông giáp quận Bắc Từ Liêm và huyện Đông Anh<br>- Phía Tây giáp huyện Phúc Thọ, ranh giới là sông Đáy</p>
+                                        <p>Huyện Đan Phượng nằm tại khoảng giữa của trục quốc lộ 32 từ trung tâm thủ đô đi Sơn Tây. Cụ thể, nếu đi từ phía Hà Nội lên Sơn Tây đến km 16+500 là ngã Tư Trôi (Hoài Đức) rẽ phải khoảng 300m là đến huyện Đan Phượng. Đan Phượng được đánh giá là huyện có diện tích tự nhiên thuộc loại nhỏ, ít đơn vị hành chính trực thuộc.<br>Huyện có hệ thống sông Hồng, sông Đáy chảy qua, trước kia là ngã ba sông (sông Đáy, sông Nhuệ, sông Hồng) nên <strong>địa hình khá bằng phẳng, chủ yếu là đất phù sa, độ cao trung bình từ 6-8m.</strong>"</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7"><img class="w-full rounded" src="./images/about.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="counter section"><img class="section__bg" src="./images/counter-bg.png" alt="">
+                    <div class="container">
+                        <div class="counter__inner">
+                            <div class="counter__item">
+                                <div class="counter__number">+50</div>
+                                <div class="counter__label">Di tích</div>
+                                <div class="counter__desc">Trải qua thăng trầm lịch sử</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__number">+2000</div>
+                                <div class="counter__label">Hiện vật</div>
+                                <div class="counter__desc">Qua các thời đại</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__number">>100</div>
+                                <div class="counter__label">Tuyến du lịch</div>
+                                <div class="counter__desc">Cho khách trải nghiệm</div>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__number">>100</div>
+                                <div class="counter__label">Sản phẩm</div>
+                                <div class="counter__desc">Cho khách trải nghiệm</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Điểm đến</h2>
+                        <div class="section__subtitle">Những địa điểm nổi bật</div>
+                        <div class="section__desc">Cùng khám phá ngay những điểm đến tuyệt vời ở Đan Phượng bạn nhé!</div>
+                        <!-- todo hapk place place holder-->
+                        <div class="text-center mt-3"><a class="button" href="#!">Xem tất cả</a></div>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Tuyến du lịch</h2>
+                        <div class="section__subtitle">Những tuyến du lịch nổi bật</div>
+                        <div class="section__desc">Mời bạn chọn tuyến du lịch yêu thích tại đây, khám phá ngay nào!
+                            <!-- todo hapk search input-->
+                        </div>
+                    </div>
+                    <div>
+                        <!-- todo hapk map-->
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Tin tức</h2>
+                        <div class="section__subtitle">Những tin tức cập nhật mới nhất</div>
+                        <div class="section__desc">Cùng cập nhật tin tức để biết tường tận về những di tích, cảnh đẹp và điểm đến không thể bỏ qua tại Đan Phượng</div>
+                        <div class="mt-5">
+                            <div class="news-slider">
+                                <div class="news-slider__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                                <div class="news__body">
+                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
+                                <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4"><a class="button" href="#!">Xem tất cả</a></div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="footer__inner"><img class="footer__bg-2" src="./images/footer-bg-2.png" alt="" /><img class="footer__bg-3" src="./images/footer-bg-3.png" alt="" />
+                    <div class="container">
+                        <div class="footer__heading">CỔNG THÔNG TIN DU LỊCH<br />HUYỆN ĐAN PHƯỢNG - TP. HÀ NỘI</div>
+                        <ul class="f-contact">
+                            <li class="f-contact__item"><i class="fal fa-fw fa-map-marker-alt me-2"></i><span>Số 105 Phố Tây Sơn - thị trấn Phùng huyện Đan Phượng</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-phone me-2"></i><a href="tel:02433886384">024. 33886384</a></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-envelope me-2"></i><span>Fax: 024. 33886384</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-user me-2"></i><span>Người phát ngôn: Đồng chí Lê Thanh Nam -Chủ tịch UBND huyện</span></li>
+                            <li class="f-contact__item"><i class="fal fa-fw fa-user me-2"></i><span>Chịu trách nhiệm nội dung: Đồng chí: Đào Thị Hồng -Phó Chủ tịch UBND huyện</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">© 2024 UBND huyện Đan Phượng</div>
+                </div>
+            </footer>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>
