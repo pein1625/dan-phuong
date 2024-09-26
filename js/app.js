@@ -87,12 +87,13 @@ function addSwiper(selector, options = {}) {
 }
 
 $(function () {
-  spaceSlider();
-  newsSlider();
+  spaceSyncSlider();
   sampleSyncSlider();
+  newsSlider();
+  cardSlider();
 });
 
-function spaceSlider() {
+function spaceSyncSlider() {
   if (!$('.space-thumb-slider').length) return;
 
   addSwiper('.space-thumb-slider', {
@@ -145,16 +146,10 @@ function newsSlider() {
     navigation: true,
     spaceBetween: 0,
     speed: 500,
-    slidesPerView: 1.5,
+    slidesPerView: 2,
     breakpoints: {
-      576: {
-        slidesPerView: 2
-      },
-      768: {
-        slidesPerView: 3
-      },
       992: {
-        slidesPerView: 4
+        slidesPerView: 3
       },
       1200: {
         slidesPerView: 4
@@ -168,51 +163,72 @@ function sampleSyncSlider() {
     return;
   }
 
-  var thumbSlider = addSwiper(".sample-thumb-slider", {
+  const $modal = $('.md-sample-detail');
+  const $modalGrid = $modal.find('.md-sample-detail__grid');
+
+  const thumbSlider = addSwiper(".sample-thumb-slider", {
+    loop: false,
     navigation: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     freeMode: true,
-    spaceBetween: 10,
+    spaceBetween: 16,
     watchSlidesProgress: true,
-    watchSlidesVisibility: true
+    watchSlidesVisibility: true,
+    breakpoints: {
+      576: {
+        spaceBetween: 20
+      },
+      992: {
+        spaceBetween: 24
+      }
+    }
   })[0];
 
-  addSwiper(".preview-slider", {
+  addSwiper(".sample-slider", {
+    loop: false,
     effect: "fade",
+    navigation: true,
+    pagination: true,
     allowTouchMove: false,
     thumbs: {
       swiper: thumbSlider
     }
+  });
+
+  $('.js-sample-slide').on('click', function () {
+    let images = $(this).data('images').split(',');
+
+    console.log('images', images);
+
+    $modal.modal('show');
+
+    $modalGrid.empty();
+
+    images.forEach(image => {
+      $modalGrid.append(`
+<div class="md-sample-detail__col">
+    <a class="md-sample-detail__frame" href="${image}" data-fancybox="sample-detail">
+        <img src="${image}" alt="" />
+    </a>
+</div>
+      `);
+    });
   });
 }
 
-$(function () {
-  if (!$(".preview-slider, .thumb-slider").length) {
-    return;
-  }
-
-  if (!window.addSwiper) {
-    console.warn('"addSwiper" funtion is required!');
-    return;
-  }
-
-  var thumbSlider = addSwiper(".thumb-slider", {
+function cardSlider() {
+  addSwiper('.card-slider', {
+    loop: false,
     navigation: true,
-    slidesPerView: 4,
-    freeMode: true,
-    spaceBetween: 10,
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true
-  })[0];
-
-  addSwiper(".preview-slider", {
-    effect: "fade",
-    allowTouchMove: false,
-    thumbs: {
-      swiper: thumbSlider
+    slidesPerView: 2,
+    spaceBetween: 0,
+    breakpoints: {
+      992: {
+        slidesPerView: 3
+      }
     }
   });
-});
+}
 
 const getUniqId = () => {
   const ts = `${new Date().getTime()}`.substring(3, 13);
