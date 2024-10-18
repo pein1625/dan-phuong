@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./css/libs.css" />
+        <link rel="stylesheet" type="text/css" href="./vendor/fontawesome-pro/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <!-- Scripts-->
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" defer="defer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+        <script src="./js/map.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="page__content">
+                <!-- main content-->
+                <div id="my-map" style="width: 100%; height: 400px;"></div>
+                <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hNc0IKJXYQzNTWtGesMaT5pcJzXMPQY&amp;loading=async&amp;callback=initMap"></script>
+            </div>
+        </div>
+        <!-- modals + sticky widgets-->
+        <button class="btn-movetop" type="button" data-target="body"><i class="fa fa-arrow-up"></i></button>
+    </body>
+</html>
