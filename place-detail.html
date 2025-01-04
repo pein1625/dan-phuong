@@ -42,7 +42,7 @@
                                             <ul class="menu menu-root">
                                                 <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
                                                 </li>
-                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Không gian 360</a><span class="menu-toggle"></span>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./spaces.html">Không gian 360</a><span class="menu-toggle"></span>
                                                     <ul class="menu menu-sub">
                                                         <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
                                                         </li>
@@ -68,9 +68,9 @@
                                                 </li>
                                                 <li class="menu-item"><a class="menu-link" href="./distribution.html">Tuyến du lịch</a>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Sản phẩm</a>
+                                                <li class="menu-item"><a class="menu-link" href="./products.html">Sản phẩm</a>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Lễ hội</a>
+                                                <li class="menu-item"><a class="menu-link" href="./festival.html">Lễ hội</a>
                                                 </li>
                                                 <li class="menu-item menu-item-group"><a class="menu-link" href="./news.html">Tin tức</a><span class="menu-toggle"></span>
                                                     <ul class="menu menu-sub">
@@ -80,7 +80,7 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Thư viện</a>
+                                                <li class="menu-item"><a class="menu-link" href="./library.html">Thư viện</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -99,97 +99,45 @@
                     </div>
                 </div>
             </header>
-            <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hNc0IKJXYQzNTWtGesMaT5pcJzXMPQY&amp;loading=async&amp;callback=initMap"></script>
             <div class="page__content">
                 <!-- main content-->
-                <nav class="breadcrumb-wrapper">
-                    <div class="container">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fal fa-fw fa-home me-2"></i><span>Trang chủ</span></a></li>
-                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Điểm đến</a></li>
-                            <li class="breadcrumb-item active">Chi tiết điểm đến</li>
-                        </ol>
+                <ol class="breadcrumb breadcrumb--white">
+                    <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fal fa-fw fa-home me-2"></i><span>Trang chủ</span></a></li>
+                    <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Điểm đến</a></li>
+                    <li class="breadcrumb-item active">Chi tiết điểm đến</li>
+                </ol>
+                <nav class="page-nav">
+                    <div class="page-nav__wrapper">
+                        <div class="container">
+                            <div class="page-nav__inner"><a class="s-btn active" href="#s-virtual">Vrtour</a><a class="s-btn" href="#s-about">Điểm đến</a><a class="s-btn" href="#s-sample">Hiện vật</a><a class="s-btn" href="#s-map">Vị trí</a><a class="s-btn" href="#s-album">Album ảnh</a><a class="s-btn" href="#s-post">Thông tin & Sự kiện</a></div>
+                        </div>
                     </div>
                 </nav>
-                <section class="place-detail s-products pt-10 pb-60">
+                <section class="banner js-section" id="s-virtual">
+                    <div class="banner__bg">
+                        <iframe src="https://danphuong.zend.website/banner-360/" frameborder="0"></iframe>
+                    </div>
+                    <div class="banner__wrapper">
+                        <h3 class="banner__subtitle">Điểm đến</h3>
+                        <h2 class="banner__title">Đền Văn Hiến</h2>
+                        <div class="banner__desc"><i class="fal fa-map-marker-alt me-2"></i><span>Đường Vạn Xuân, Hạ Mỗ, Đan Phượng, Hà Nội, Việt Nam</span></div>
+                        <div class="banner__btn-wrap"><a class="button js-experience" href="#!">Trải nghiệm 360</a></div>
+                        <div class="banner__arrow-wrap"><a class="banner__arrow" href="#s-about"><i class="fal fa-arrow-down"></i></a></div>
+                    </div>
+                </section>
+                <section class="section-2 js-section" id="s-about">
                     <div class="container">
-                        <nav class="tags mb-6"><a class="tags__item active" href="#!">Điểm đến</a><a class="tags__item" href="#!">Hiện vật 3D</a><a class="tags__item" href="#!">Thông tin & Sự kiện</a><a class="tags__item" href="#!">Vị trí</a><a class="tags__item" href="#!">VR tour</a></nav>
-                        <div class="place-detail__subtitle mt-3">Điểm đến</div>
-                        <div class="place-detail__title">Đền Văn Hiến</div>
-                        <div class="place-detail__info">
-                            <div class="place-detail__info-item"><i class="fal fa-fw fa-clock me-2"></i><span>26/06/2024 | 8:00 AM</span></div>
-                            <div class="place-detail__info-item"><i class="fal fa-fw fa-map-marker-alt me-2"></i><span>Đường Vạn Xuân, Hạ Mỗ, Đan Phượng, Hà Nội, Việt Nam</span></div>
-                        </div>
-                        <div class="mt-3">
-                            <div class="place-slider">
-                                <div class="place-slider__prev"><i class="fal fa-angle-left"></i></div>
-                                <div class="place-slider__next"><i class="fal fa-angle-right"></i></div>
-                                <div class="place-slider__container swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-20 mt-xl-4">
-                            <div class="place-thumb-slider">
-                                <div class="place-thumb-slider__prev"><i class="fal fa-angle-left"></i></div>
-                                <div class="place-thumb-slider__next"><i class="fal fa-angle-right"></i></div>
-                                <div class="place-thumb-slider__container swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
-                                        </div>
-                                        <div class="swiper-slide position-relative">
-                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-3 text-center"><a class="link-view-album" href="#md-album-place" data-bs-toggle="modal"><i class="fal fa-angle-double-right text-secondary me-2"></i><span>Xem tất cả Album ảnh của điểm đến</span></a></div>
-                        <div class="mt-30 mt-xl-40">
-                            <h2 class="place-detail__heading">1. Thông tin về di tích Đền Văn Hiến</h2>
-                            <div>
-                                <p><strong>Sơ nét về điểm đến: Đền Văn Hiến - Đan Phượng</strong></p>
-                                <p>Đền Văn Hiến, tên chữ là Văn Hiến Đường thuộc làng Hạ Mỗ, xã Hạ Mỗ, huyện Đan Phượng, thành phố Hà Nội. Xưa kia Đền Văn Hiến là văn chỉ thờ Khổng Tử và là nơi biểu dương các danh nhân khoa bảng trong làng. Sau khi Thái úy Tô Hiến Thành, người con ưu tú của quê hương qua đời, nhân dân xây mộ và thờ ông tại đây. Tháng 11/1991, Bộ Văn hóa-Thông tin thể thao và du lịch đã xếp hạng đền Văn Hiến là di tích lịch sử và kiến trúc nghệ thuật.</p>
-                                <p>Đền là nơi thờ chính hai vị đại hiền của làng Hạ Mỗ là Thái úy Tô Hiến Thành và quan nghề Đỗ Trí Trung. Năm Duy Tân thứ 2 (Mậu Thân – 1908), sau lễ Đồng Giáng bút tại chùa Hải Giác (Đinh Mùi – 1907), các nho sĩ và nhân dân Hạ Mỗ tiến hành sửa sang, quy hoạch lại di tích thành đền Văn Hiến như ngày nay.<br>Đền Văn Hiến tọa lạc trên khu đât cao đầu làng, nằm bên hữu ngạn sông Nhuệ cổ. Các kiến trúc chính của đền được xây dựng theo hướng Đông. Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
-                            </div>
+                        <h2 class="section-2__title">Giới thiệu di tích Đền Văn Hiến</h2>
+                        <div class="section-2__content">
+                            <p>Đền Văn Hiến, tên chữ là Văn Hiến Đường thuộc làng Hạ Mỗ, xã Hạ Mỗ, huyện Đan Phượng, thành phố Hà Nội. Xưa kia Đền Văn Hiến là văn chỉ thờ Khổng Tử và là nơi biểu dương các danh nhân khoa bảng trong làng. Sau khi Thái úy Tô Hiến Thành, người con ưu tú của quê hương qua đời, nhân dân xây mộ và thờ ông tại đây. Tháng 11/1991, Bộ Văn hóa-Thông tin thể thao và du lịch đã xếp hạng đền Văn Hiến là di tích lịch sử và kiến trúc nghệ thuật.</p>
+                            <p>Đền là nơi thờ chính hai vị đại hiền của làng Hạ Mỗ là Thái úy Tô Hiến Thành và quan nghề Đỗ Trí Trung. Năm Duy Tân thứ 2 (Mậu Thân – 1908), sau lễ Đồng Giáng bút tại chùa Hải Giác (Đinh Mùi – 1907), các nho sĩ và nhân dân Hạ Mỗ tiến hành sửa sang, quy hoạch lại di tích thành đền Văn Hiến như ngày nay.</p>
+                            <p>Đền Văn Hiến tọa lạc trên khu đât cao đầu làng, nằm bên hữu ngạn sông Nhuệ cổ. Các kiến trúc chính của đền được xây dựng theo hướng Đông. Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
                         </div>
                     </div>
                 </section>
-                <section class="place-detail__block"><img class="place-detail__bg" src="./images/paper-1.jpg" alt="">
+                <section class="section-2 js-section" id="s-sample"><img class="section-2__bg" src="./images/paper-1.jpg" alt="">
                     <div class="container">
-                        <h2 class="place-detail__heading">2. Hiện vật 3D tại đền</h2>
+                        <h2 class="section-2__title">Hiện vật</h2>
                         <div class="row">
                             <div class="col-lg-6 mb-30 mb-lg-0">
                                 <div class="sample-slider-group">
@@ -252,15 +200,17 @@
                                 <p><strong>Màu sắc:</strong><span class="ml-2"> Praesent hendrerit diam vitae</span></p>
                                 <p><strong>Trọng lượng:</strong><span class="ml-2"> Praesent hendrerit diam vitae</span></p>
                                 <p>Praesent hendrerit diam vitae mi efficitur, a congue felis dictum. Vivamus vehicula consequat neque, vulputate molestie erat ullamcorper a. Suspendisse sagittis ornare porta. Nullam vel erat at tortor viverra pharetra. Quisque quis metus arcu. Duis sed consectetur ligula, nec pulvinar turpis. Mauris rutrum nisi in volutpat finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dictum lorem orci, vel pellentesque dolor varius id. Praesent hendrerit diam vitae mi efficitur, a congue felis dictum. Vivamus vehicula consequat neque, vulputate molestie erat ullamcorper a. Suspendisse sagittis ornare porta. Nullam vel erat at tortor viverra pharetra. Quisque quis metus arcu. Duis sed consectetur ligula, nec pulvinar turpis. Mauris rutrum nisi in volutpat finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dictum lorem orci, vel pellentesque dolor varius id.</p>
-                                <p><a class="button" href="#!">XEM HIỆN VẬT 3D</a></p>
+                                <p><a class="button" href="#!">XEM HIỆN VẬT</a></p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="place-detail__block"><img class="place-detail__bg" src="./images/paper-2.jpg" alt="">
-                    <div class="place-detail__overlay"></div>
+                <section class="s-sample js-section" id="">
+                    <div class="s-sample__overlay"></div>
                     <div class="container">
-                        <h2 class="place-detail__heading">Danh sách hiện vật 3D tại đền</h2>
+                        <div class="s-sample__header">
+                            <h2 class="s-sample__title">Danh sách hiện vật 3D tại đền</h2><a class="s-sample__link" href="#!"><i class="far fa-angle-double-right me-2 text-secondary"></i><span>Xem tất cả hiện vật của điểm đến</span></a>
+                        </div>
                         <div class="card-slider-2">
                             <div class="card-slider-2__prev"><i class="fal fa-angle-left"></i></div>
                             <div class="card-slider-2__next"><i class="fal fa-angle-right"></i></div>
@@ -307,258 +257,310 @@
                         </div>
                     </div>
                 </section>
-                <div class="map-frame">
-                    <div id="map"></div>
-                </div>
-                <script>
-                    var defaultRoutes = ['tuyen_1', 'tuyen_2', 'tuyen_3'];
-                    var markersData = {
-                        'tuyen_1':
-                        {
-                            lat: 37.7749,
-                            lng: -122.4194,
-                            info:
-                            {
-                                title: 'San Francisco, California',
-                                description: 'A popular tourist destination, known for the Golden Gate Bridge.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_2':
-                        {
-                            lat: 34.0522,
-                            lng: -118.2437,
-                            info:
-                            {
-                                title: 'Los Angeles, California',
-                                description: 'Known for its Mediterranean climate and the entertainment industry.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_3':
-                        {
-                            lat: 40.7128,
-                            lng: -74.0060,
-                            info:
-                            {
-                                title: 'New York, New York',
-                                description: 'The largest city in the USA, known for its iconic skyline.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_4':
-                        {
-                            lat: 37.7749,
-                            lng: -122.4194,
-                            info:
-                            {
-                                title: 'San Francisco, California',
-                                description: 'A popular tourist destination, known for the Golden Gate Bridge.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_5':
-                        {
-                            lat: 34.0522,
-                            lng: -118.2437,
-                            info:
-                            {
-                                title: 'Los Angeles, California',
-                                description: 'Known for its Mediterranean climate and the entertainment industry.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_6':
-                        {
-                            lat: 40.7128,
-                            lng: -74.0060,
-                            info:
-                            {
-                                title: 'New York, New York',
-                                description: 'The largest city in the USA, known for its iconic skyline.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_7':
-                        {
-                            lat: 34.0522,
-                            lng: -118.2437,
-                            info:
-                            {
-                                title: 'Los Angeles, California',
-                                description: 'Known for its Mediterranean climate and the entertainment industry.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                        'tuyen_8':
-                        {
-                            lat: 40.7128,
-                            lng: -74.0060,
-                            info:
-                            {
-                                title: 'New York, New York',
-                                description: 'The largest city in the USA, known for its iconic skyline.',
-                                imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
-                            }
-                        },
-                    };
-
-                </script>
-                <section class="s-vr"><img class="s-vr__texture" src="./images/vr-left.png" alt=""><img class="s-vr__texture s-vr__texture--right" src="./images/vr-right.png" alt="">
-                    <div class="container">
-                        <div class="s-vr__logo n-logo"><img src="./images/logo.png" alt=""></div>
-                        <div class="s-vr__subtitle">Để có cảm giác thật hơn</div>
-                        <div class="s-vr__title">Trải nghiệm không gian <span style="color: #FAEF50;">VR tour</span> ngay</div>
-                        <div class="text-center"><a class="button" href="#!">Tham quan 360 độ</a></div>
+                <section class="section-2 s-map js-section" id="s-map">
+                    <h2 class="section-2__title s-map__title">Vị trí các điểm đến</h2>
+                    <div class="map-frame">
+                        <div id="map"></div>
                     </div>
+                    <script>
+                        window.defaultRoutes = ['tuyen_1', 'tuyen_2', 'tuyen_3'];
+                        window.markersData = {
+                            'tuyen_1':
+                            {
+                                lat: 37.7749,
+                                lng: -122.4194,
+                                info:
+                                {
+                                    title: 'San Francisco, California',
+                                    description: 'A popular tourist destination, known for the Golden Gate Bridge.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_2':
+                            {
+                                lat: 34.0522,
+                                lng: -118.2437,
+                                info:
+                                {
+                                    title: 'Los Angeles, California',
+                                    description: 'Known for its Mediterranean climate and the entertainment industry.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_3':
+                            {
+                                lat: 40.7128,
+                                lng: -74.0060,
+                                info:
+                                {
+                                    title: 'New York, New York',
+                                    description: 'The largest city in the USA, known for its iconic skyline.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_4':
+                            {
+                                lat: 37.7749,
+                                lng: -122.4194,
+                                info:
+                                {
+                                    title: 'San Francisco, California',
+                                    description: 'A popular tourist destination, known for the Golden Gate Bridge.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_5':
+                            {
+                                lat: 34.0522,
+                                lng: -118.2437,
+                                info:
+                                {
+                                    title: 'Los Angeles, California',
+                                    description: 'Known for its Mediterranean climate and the entertainment industry.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_6':
+                            {
+                                lat: 40.7128,
+                                lng: -74.0060,
+                                info:
+                                {
+                                    title: 'New York, New York',
+                                    description: 'The largest city in the USA, known for its iconic skyline.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_7':
+                            {
+                                lat: 34.0522,
+                                lng: -118.2437,
+                                info:
+                                {
+                                    title: 'Los Angeles, California',
+                                    description: 'Known for its Mediterranean climate and the entertainment industry.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                            'tuyen_8':
+                            {
+                                lat: 40.7128,
+                                lng: -74.0060,
+                                info:
+                                {
+                                    title: 'New York, New York',
+                                    description: 'The largest city in the USA, known for its iconic skyline.',
+                                    imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
+                                }
+                            },
+                        };
+
+                    </script>
+                    <script async="async" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hNc0IKJXYQzNTWtGesMaT5pcJzXMPQY&amp;loading=async&amp;callback=initMap"></script>
                 </section>
-                <section class="section" style="background-color: #FFFCF2;">
+                <section class="s-album section-2 js-section" id="s-album"><img class="s-album__texture-5" src="./images/texture-5.png" alt="" /><img class="s-album__texture-6" src="./images/texture-6.png" alt="" />
                     <div class="container">
-                        <h2 class="section__title">Điểm đến liên quan</h2>
-                        <div class="mt-4">
-                            <div class="news-slider">
-                                <div class="news-slider__container swiper-container">
+                        <h2 class="section-2__title text-white">Album ảnh</h2>
+                        <div class="place-slider">
+                            <div class="place-slider__prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="place-slider__next"><i class="fal fa-angle-right"></i></div>
+                            <div class="place-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-20 mt-xl-4">
+                            <div class="place-thumb-slider">
+                                <div class="place-thumb-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                <div class="place-thumb-slider__next"><i class="fal fa-angle-right"></i></div>
+                                <div class="place-thumb-slider__container swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
-                                <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
                             </div>
+                        </div>
+                        <div class="mt-3 text-center"><a class="link-view-album" href="#md-album-place" data-bs-toggle="modal"><i class="fal fa-angle-double-right text-secondary me-2"></i><span class="text-white">Xem tất cả Album ảnh của điểm đến</span></a></div>
+                    </div>
+                </section>
+                <section class="section-2 js-section" id="s-post">
+                    <div class="container">
+                        <h2 class="section-2__title">Điểm đến liên quan</h2>
+                        <div class="news-slider">
+                            <div class="news-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
+                            <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
                         </div>
                     </div>
                 </section>
-                <section class="section">
+                <section class="section-2 js-section pt-0" id="">
                     <div class="container">
-                        <h2 class="section__title">Các bài viết liên quan</h2>
-                        <div class="mt-4">
-                            <div class="news-slider">
-                                <div class="news-slider__container swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
-                                                <div class="news__body">
-                                                    <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
-                                                    <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                    <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                    <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                                </div>
-                                            </article>
-                                        </div>
+                        <h2 class="section-2__title">Các bài viết liên quan</h2>
+                        <div class="news-slider">
+                            <div class="news-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
                                     </div>
                                 </div>
-                                <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
-                                <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
                             </div>
+                            <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
+                            <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
                         </div>
                     </div>
                 </section>

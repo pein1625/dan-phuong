@@ -42,7 +42,7 @@
                                             <ul class="menu menu-root">
                                                 <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
                                                 </li>
-                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Không gian 360</a><span class="menu-toggle"></span>
+                                                <li class="menu-item menu-item-group"><a class="menu-link" href="./spaces.html">Không gian 360</a><span class="menu-toggle"></span>
                                                     <ul class="menu menu-sub">
                                                         <li class="menu-item"><a class="menu-link" href="#!">Dropdown</a>
                                                         </li>
@@ -68,9 +68,9 @@
                                                 </li>
                                                 <li class="menu-item"><a class="menu-link" href="./distribution.html">Tuyến du lịch</a>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Sản phẩm</a>
+                                                <li class="menu-item"><a class="menu-link" href="./products.html">Sản phẩm</a>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Lễ hội</a>
+                                                <li class="menu-item"><a class="menu-link" href="./festival.html">Lễ hội</a>
                                                 </li>
                                                 <li class="menu-item menu-item-group"><a class="menu-link" href="./news.html">Tin tức</a><span class="menu-toggle"></span>
                                                     <ul class="menu menu-sub">
@@ -80,7 +80,7 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="menu-item"><a class="menu-link" href="./news.html">Thư viện</a>
+                                                <li class="menu-item"><a class="menu-link" href="./library.html">Thư viện</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -101,140 +101,115 @@
             </header>
             <div class="page__content">
                 <!-- main content-->
-                <nav class="breadcrumb-wrapper">
-                    <div class="container">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fal fa-fw fa-home me-2"></i><span>Trang chủ</span></a></li>
-                            <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Hiện vật 3D</a></li>
-                            <li class="breadcrumb-item active">Chi tiết hiện vật 3D</li>
-                        </ol>
+                <nav class="page-nav">
+                    <div class="page-nav__wrapper">
+                        <div class="container">
+                            <div class="page-nav__inner">
+                                <ol class="breadcrumb breadcrumb--white">
+                                    <li class="breadcrumb-item"><a class="link-unstyled" href="#!"><i class="fal fa-fw fa-home me-2"></i><span>Trang chủ</span></a></li>
+                                    <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Hiện vật 3D</a></li>
+                                    <li class="breadcrumb-item active">Chi tiết hiện vật 3D</li>
+                                </ol>
+                                <div class="page-nav__nav"><a class="s-btn active" href="#s-virtual">Ảnh 3D</a><a class="s-btn" href="#s-about">Giới thiệu</a><a class="s-btn" href="#s-album">Album ảnh</a><a class="s-btn" href="#s-post">Thông tin liên quan</a></div>
+                            </div>
+                        </div>
                     </div>
                 </nav>
-                <section class="section" style="margin-top: -54px;"><img class="section__bg" src="./images/paper-texture.jpg" alt="">
+                <section class="banner js-section" id="s-virtual">
+                    <div class="banner__bg">
+                        <iframe src="https://danphuong.zend.website/banner-360/" frameborder="0"></iframe>
+                    </div>
+                    <div class="banner__wrapper"><img class="banner__icon" src="./images/icon-360.svg" alt="" style="opacity: 0.5">
+                        <h3 class="banner__subtitle">HIỆN VẬT</h3>
+                        <h2 class="banner__title">Sư tử đá thời Nguyễn</h2>
+                        <div class="banner__desc"><i class="fal fa-map-marker-alt me-2"></i><span>Đình Vạn Xuân - Xã Hạ Mỗ, Huyện Đan Phượng</span></div>
+                        <div class="banner__btn-wrap"><a class="button js-experience" href="#!">Trải nghiệm 360</a></div>
+                    </div>
+                </section>
+                <section class="section-2 pb-40 js-section" id="s-about"><img class="section-2__bg" src="./images/paper-1.jpg" alt="">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 mb-30 mb-lg-0">
-                                <div class="sample-slider-group">
-                                    <div>
-                                        <div class="sample-slider">
-                                            <div class="sample-slider__container swiper-container">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <div class="sample-slider__frame"><img src="./images/sample-1.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="sample-slider__frame"><img src="./images/sample-2.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="sample-slider__frame"><img src="./images/sample-3.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="sample-slider__frame"><img src="./images/sample-4.jpg" alt="" /></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="sample-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
-                                            <div class="sample-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3 mt-xl-4">
-                                        <div class="sample-thumb-slider">
-                                            <div class="sample-thumb-slider__prev"><i class="fal fa-angle-left"></i></div>
-                                            <div class="sample-thumb-slider__next"><i class="fal fa-angle-right"></i></div>
-                                            <div class="sample-thumb-slider__container swiper-container">
-                                                <div class="swiper-wrapper">
-                                                    <div class="sample-thumb-slider__slide swiper-slide">
-                                                        <div class="sample-thumb-slider__frame"><img src="./images/sample-1.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="sample-thumb-slider__slide swiper-slide">
-                                                        <div class="sample-thumb-slider__frame"><img src="./images/sample-2.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="sample-thumb-slider__slide swiper-slide">
-                                                        <div class="sample-thumb-slider__frame"><img src="./images/sample-3.jpg" alt="" /></div>
-                                                    </div>
-                                                    <div class="sample-thumb-slider__slide swiper-slide">
-                                                        <div class="sample-thumb-slider__frame"><img src="./images/sample-4.jpg" alt="" /></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3 text-center"><a class="link-view-album" href="#md-album-sample" data-bs-toggle="modal"><i class="fal fa-angle-double-right me-2 text-secondary"></i><span>Xem tất cả Album ảnh của hiện vật</span></a></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <h2 class="section__title-2 text-start">TÊN DI TÍCH: Di tích Mauris ac nunc vitae turpis dictum elementum</h2>
-                                <div>
-                                    <p><strong>Tên hiện vật:</strong><span class="ms-1">Praesent hendrerit diam vitae</span></p>
-                                    <p><strong>Kích thước hiện vật:</strong><span class="ms-1">Praesent hendrerit diam vitae</span></p>
-                                    <p><strong>Khảo tả đặc điểm:</strong></p>
-                                    <p>Praesent hendrerit diam vitae mi efficitur, a congue felis dictum. Vivamus vehicula consequat neque, vulputate molestie erat ullamcorper a. Suspendisse sagittis ornare porta. Nullam vel erat at tortor viverra pharetra. Quisque quis metus arcu. Duis sed consectetur ligula, nec pulvinar turpis. Mauris rutrum nisi in volutpat finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dictum lorem orci, vel pellentesque dolor varius id. Praesent hendrerit diam vitae mi efficitur, a congue felis dictum. Vivamus vehicula consequat neque, vulputate molestie erat ullamcorper a. Suspendisse sagittis ornare porta. Nullam vel erat at tortor viverra pharetra. Quisque quis metus arcu. Duis sed consectetur ligula, nec pulvinar turpis. Mauris rutrum nisi in volutpat finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dictum lorem orci, vel pellentesque dolor varius id.</p>
+                        <h2 class="section-2__title">Giới thiệu Hiện vật</h2>
+                        <div class="section-2__content">
+                            <p>Đền Văn Hiến, tên chữ là Văn Hiến Đường thuộc làng Hạ Mỗ, xã Hạ Mỗ, huyện Đan Phượng, thành phố Hà Nội. Xưa kia Đền Văn Hiến là văn chỉ thờ Khổng Tử và là nơi biểu dương các danh nhân khoa bảng trong làng. Sau khi Thái úy Tô Hiến Thành, người con ưu tú của quê hương qua đời, nhân dân xây mộ và thờ ông tại đây. Tháng 11/1991, Bộ Văn hóa-Thông tin thể thao và du lịch đã xếp hạng đền Văn Hiến là di tích lịch sử và kiến trúc nghệ thuật.</p>
+                            <p>Đền là nơi thờ chính hai vị đại hiền của làng Hạ Mỗ là Thái úy Tô Hiến Thành và quan nghề Đỗ Trí Trung. Năm Duy Tân thứ 2 (Mậu Thân – 1908), sau lễ Đồng Giáng bút tại chùa Hải Giác (Đinh Mùi – 1907), các nho sĩ và nhân dân Hạ Mỗ tiến hành sửa sang, quy hoạch lại di tích thành đền Văn Hiến như ngày nay.</p>
+                            <div class="row">
+                                <div class="col-lg-6"><img src="./images/sample-1.jpg" alt=""></div>
+                                <div class="col-lg-6">
+                                    <p>Đền Văn Hiến tọa lạc trên khu đât cao đầu làng, nằm bên hữu ngạn sông Nhuệ cổ. Các kiến trúc chính của đền được xây dựng theo hướng Đông. Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
+                                    <p>Đền Văn Hiến tọa lạc trên khu đât cao đầu làng, nằm bên hữu ngạn sông Nhuệ cổ. Các kiến trúc chính của đền được xây dựng theo hướng Đông. Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
+                                    <p>Đền Văn Hiến tọa lạc trên khu đât cao đầu làng, nằm bên hữu ngạn sông Nhuệ cổ. Các kiến trúc chính của đền được xây dựng theo hướng Đông. Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
+                                    <p>Sau lần tôn tạo năm 2005, quy hoạch mặt bằng nhà đền và nhà mẫu chuyển sang phía trái. Khu “Tô Vương lăng Thái sư mộ” nhìn thẳng nhà bia “Văn Hiến Đường bi ký” bên hồ bán nguyệt. Gian giữa nhà tiền tế chiếu trực diện tượng danh nhân Tô Hiến Thành nằm ở trung tâm khuôn viên đền Văn Hiến.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center mt-40"><a class="arrow-down" href="#s-album"><i class="fal fa-arrow-down"></i></a></div>
                     </div>
                 </section>
-                <section class="section">
+                <section class="s-album section-2 js-section" id="s-album"><img class="s-album__texture-5" src="./images/texture-5.png" alt="" /><img class="s-album__texture-6" src="./images/texture-6.png" alt="" />
                     <div class="container">
-                        <h2 class="section__title-2">Di tích Mauris ac nunc vitae turpis dictum<br>elementum</h2>
-                        <div class="mb-4">
-                            <p class="text-center">Praesent hendrerit diam vitae mi efficitur, a congue felis dictum. Vivamus vehicula consequat neque, vulputate molestie erat ullamcorper a. Suspendisse sagittis ornare porta. Nullam vel erat at tortor viverra pharetra. Quisque quis metus arcu. Duis sed consectetur ligula, nec pulvinar turpis. Mauris rutrum nisi in volutpat finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dictum lorem orci, vel pellentesque dolor varius id.</p>
-                        </div>
-                        <div class="ratio ratio-16x9">
-                            <iframe allowfullscreen="true" src="https://momento360.com/e/u/a9b53aa8f8b0403ba7a4e18243aabc66"></iframe>
-                        </div>
-                    </div>
-                </section>
-                <section class="section" style="background-color: #FFFCF2;">
-                    <div class="container">
-                        <h2 class="section__title-2">Hiện vật liên quan</h2>
-                        <div class="card-slider">
-                            <div class="card-slider__prev"><i class="fal fa-angle-left"></i></div>
-                            <div class="card-slider__next"><i class="fal fa-angle-right"></i></div>
-                            <div class="card-slider__container swiper-container">
+                        <h2 class="section-2__title text-white">Album ảnh</h2>
+                        <div class="place-slider">
+                            <div class="place-slider__prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="place-slider__next"><i class="fal fa-angle-right"></i></div>
+                            <div class="place-slider__container swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <article class="news news--sample"><a class="news__frame" href="./sample-detail.html"><img src="./images/sample-1.jpg" alt="" /></a>
-                                            <div class="news__body">
-                                                <h3 class="news__title"><a href="./sample-detail.html">Lorem ipsum dolor</a></h3>
-                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                            </div>
-                                        </article>
+                                        <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <article class="news news--sample"><a class="news__frame" href="./sample-detail.html"><img src="./images/sample-2.jpg" alt="" /></a>
-                                            <div class="news__body">
-                                                <h3 class="news__title"><a href="./sample-detail.html">Con dấu thời X</a></h3>
-                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                            </div>
-                                        </article>
+                                        <div class="place-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <article class="news news--sample"><a class="news__frame" href="./sample-detail.html"><img src="./images/sample-3.jpg" alt="" /></a>
-                                            <div class="news__body">
-                                                <h3 class="news__title"><a href="./sample-detail.html">Trống đồng</a></h3>
-                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
-                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
-                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
-                                            </div>
-                                        </article>
+                                        <div class="place-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="place-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="mt-20 mt-xl-4">
+                            <div class="place-thumb-slider">
+                                <div class="place-thumb-slider__prev"><i class="fal fa-angle-left"></i></div>
+                                <div class="place-thumb-slider__next"><i class="fal fa-angle-right"></i></div>
+                                <div class="place-thumb-slider__container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-2.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-3.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-4.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-5.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="swiper-slide position-relative">
+                                            <div class="place-thumb-slider__frame"><img src="./images/img-1.jpg" alt="" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center"><a class="link-view-album" href="#md-album-place" data-bs-toggle="modal"><i class="fal fa-angle-double-right text-secondary me-2"></i><span class="text-white">Xem tất cả Album ảnh của điểm đến</span></a></div>
                     </div>
                 </section>
-                <section class="section">
+                <section class="section-2 js-section" id="s-post">
                     <div class="container">
-                        <h2 class="section__title-2">Bài viết liên quan</h2>
-                        <div class="card-slider">
-                            <div class="card-slider__prev"><i class="fal fa-angle-left"></i></div>
-                            <div class="card-slider__next"><i class="fal fa-angle-right"></i></div>
-                            <div class="card-slider__container swiper-container">
+                        <h2 class="section-2__title">Điểm đến liên quan</h2>
+                        <div class="news-slider">
+                            <div class="news-slider__container swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
@@ -266,8 +241,113 @@
                                             </div>
                                         </article>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
+                            <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2 js-section pt-0" id="">
+                    <div class="container">
+                        <h2 class="section-2__title">Các bài viết liên quan</h2>
+                        <div class="news-slider">
+                            <div class="news-slider__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="news"><a class="news__frame" href="./news-detail.html"><img src="https://placehold.co/600x400" alt="" /></a>
+                                            <div class="news__body">
+                                                <h3 class="news__title"><a href="./news-detail.html">Lễ hội diều truyền thống</a></h3>
+                                                <div class="news__info"><span class="news__tag">Du lịch</span><span class="news__time">10/11/2022</span></div>
+                                                <div class="news__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy tincidunt ut Ut wisi enim ad minim veniam Lorem ipsum dolor sit amet, ...</div>
+                                                <div class="mt-auto"><a class="news__link" href="./news-detail.html">Xem thêm</a></div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-slider__prev"><i class="fal fa-fw fa-angle-left"></i></div>
+                            <div class="news-slider__next"><i class="fal fa-fw fa-angle-right"></i></div>
                         </div>
                     </div>
                 </section>

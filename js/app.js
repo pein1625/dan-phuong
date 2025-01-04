@@ -281,6 +281,17 @@ const getUniqId = () => {
   return id;
 };
 
+(function ($) {
+  $.fn.isOnScreen = function (percent = 1) {
+    const $el = $(this);
+    const bbox = $el.get(0).getBoundingClientRect();
+
+    let screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    return bbox.bottom > 0 && bbox.top < screenHeight;
+  };
+})(jQuery);
+
 // search button toggle
 $(function () {
   $(".search-btn").on("click", function (e) {
@@ -426,17 +437,45 @@ $(function () {
 });
 
 $(function () {
-  $('.js-home-page-scroll-down').on('click', function (e) {
-    e.preventDefault();
+  $('.js-experience').on('click', function () {
+    $(this).closest('.banner__wrapper').remove();
+  });
+});
 
-    const $header = $('.header');
-    const $target = $('.js-home-scroll-section');
+$(function () {
+  const $window = $(window);
+  const $pageNav = $('.page-nav');
 
-    if (!$target.length) return false;
+  const pageNavIds = [];
 
-    const headerHeight = $header.outerHeight();
-    const offsetTop = $target.offset().top;
+  $('.page-nav__nav .s-btn').each(function () {
+    const href = $(this).attr('href');
+    pageNavIds.push(href);
+  });
 
-    $(window).scrollTop(offsetTop - headerHeight);
+  $window.on('scroll', function () {
+    const scrollTop = $window.scrollTop();
+
+    if (scrollTop > 54) {
+      $pageNav.addClass('is-fixed');
+    } else {
+      $pageNav.removeClass('is-fixed');
+    }
+
+    let target = null;
+
+    $('.js-section').each(function () {
+      const $el = $(this);
+      let id = $el.attr('id');
+
+      if (id && pageNavIds.includes('#' + id) && $el.isOnScreen()) {
+        target = '#' + id;
+      }
+    });
+
+    if (target) {
+      $('.page-nav__nav .s-btn').removeClass('active');
+      $(`.page-nav__nav .s-btn[href="${target}"]`).addClass('active');
+    }
   });
 });
