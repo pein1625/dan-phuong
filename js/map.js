@@ -46,6 +46,8 @@ function renderMarkersAndCentering(locations) {
             infoWindow.open(map, marker); // Gắn InfoWindow với marker
         });
 
+        infoWindow.open(map, marker); // Gắn InfoWindow với marker
+
         bounds.extend(marker.getPosition());
     });
 
@@ -73,11 +75,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         $('.js-location-checkbox').each(function () {
             if (this.checked) {
-                const routeName = $(this).data('route');
+                let routeIds = $(this).data('relics');
 
-                if (window.markersData[routeName]) {
-                    checkedRoutes.push(window.markersData[routeName]);
-                }
+                routeIds = String(routeIds).split(',');
+
+                routeIds.forEach(routeId => {
+                    const routeName = 'route_' + routeId;
+
+                    if (window.markersData[routeName]) {
+                        checkedRoutes.push(window.markersData[routeName]);
+                    }
+                });
             }
         });
 

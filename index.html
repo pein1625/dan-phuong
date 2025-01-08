@@ -236,42 +236,42 @@
                                 <div class="route__dropdown">
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_1"><span class="checkbox-styled__icon"></span><strong>Tuyến A:</strong><span class="ms-1">Hạ Mỗ (Hồng Thái)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="1,2"><span class="checkbox-styled__icon"></span><strong>Tuyến A:</strong><span class="ms-1">Hạ Mỗ (Hồng Thái)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_2"><span class="checkbox-styled__icon"></span><strong>Tuyến B:</strong><span class="ms-1">Miếu Đinh Nguyên (xã Thọ An)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="2,3"><span class="checkbox-styled__icon"></span><strong>Tuyến B:</strong><span class="ms-1">Miếu Đinh Nguyên (xã Thọ An)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_3"><span class="checkbox-styled__icon"></span><strong>Tuyến C:</strong><span class="ms-1">Đền Nhã Lang (xã Hạ Mỗ)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="3,4"><span class="checkbox-styled__icon"></span><strong>Tuyến C:</strong><span class="ms-1">Đền Nhã Lang (xã Hạ Mỗ)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_4"><span class="checkbox-styled__icon"></span><strong>Tuyến D:</strong><span class="ms-1">Đình chùa Phương Mạc (xã Phương Đình)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="4,5"><span class="checkbox-styled__icon"></span><strong>Tuyến D:</strong><span class="ms-1">Đình chùa Phương Mạc (xã Phương Đình)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_5"><span class="checkbox-styled__icon"></span><strong>Tuyến E:</strong><span class="ms-1">Đền Văn Hiến - Thờ Thái úy Phụ chính Tô Hiến Thành (xã Hạ Mỗ)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="5,6"><span class="checkbox-styled__icon"></span><strong>Tuyến E:</strong><span class="ms-1">Đền Văn Hiến - Thờ Thái úy Phụ chính Tô Hiến Thành (xã Hạ Mỗ)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_6"><span class="checkbox-styled__icon"></span><strong>Tuyến F:</strong><span class="ms-1">Đình Vạn Xuân (xã Hạ Mỗ)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="6,7"><span class="checkbox-styled__icon"></span><strong>Tuyến F:</strong><span class="ms-1">Đình Vạn Xuân (xã Hạ Mỗ)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_7"><span class="checkbox-styled__icon"></span><strong>Tuyến G:</strong><span class="ms-1">Đình chùa Phương Mạc (xã Phương Đình)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="7,8"><span class="checkbox-styled__icon"></span><strong>Tuyến G:</strong><span class="ms-1">Đình chùa Phương Mạc (xã Phương Đình)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
                                         <label class="checkbox-styled">
-                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-route="tuyen_8"><span class="checkbox-styled__icon"></span><strong>Tuyến H:</strong><span class="ms-1">Miếu Xương Rồng (xã Liên Hồng)</span>
+                                            <input class="checkbox-styled__input js-location-checkbox" type="checkbox" name="location" data-relics="8,9"><span class="checkbox-styled__icon"></span><strong>Tuyến H:</strong><span class="ms-1">Miếu Xương Rồng (xã Liên Hồng)</span>
                                         </label>
                                     </div>
                                     <div class="route__item">
@@ -287,9 +287,9 @@
                         <div id="map"></div>
                     </div>
                     <script>
-                        window.defaultRoutes = ['tuyen_1', 'tuyen_2', 'tuyen_3'];
+                        window.defaultRoutes = ['route_1', 'route_2', 'route_3'];
                         window.markersData = {
-                            'tuyen_1':
+                            'route_1':
                             {
                                 lat: 37.7749,
                                 lng: -122.4194,
@@ -300,7 +300,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_2':
+                            'route_2':
                             {
                                 lat: 34.0522,
                                 lng: -118.2437,
@@ -311,7 +311,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_3':
+                            'route_3':
                             {
                                 lat: 40.7128,
                                 lng: -74.0060,
@@ -322,7 +322,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_4':
+                            'route_4':
                             {
                                 lat: 37.7749,
                                 lng: -122.4194,
@@ -333,7 +333,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_5':
+                            'route_5':
                             {
                                 lat: 34.0522,
                                 lng: -118.2437,
@@ -344,7 +344,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_6':
+                            'route_6':
                             {
                                 lat: 40.7128,
                                 lng: -74.0060,
@@ -355,7 +355,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_7':
+                            'route_7':
                             {
                                 lat: 34.0522,
                                 lng: -118.2437,
@@ -366,7 +366,7 @@
                                     imageUrl: 'https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png'
                                 }
                             },
-                            'tuyen_8':
+                            'route_8':
                             {
                                 lat: 40.7128,
                                 lng: -74.0060,
