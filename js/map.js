@@ -72,20 +72,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $('.js-location-checkbox').on('change', function () {
         const checkedRoutes = [];
+        let routeIds = [];
 
         $('.js-location-checkbox').each(function () {
             if (this.checked) {
-                let routeIds = $(this).data('relics');
+                let relics = $(this).data('relics');
 
-                routeIds = String(routeIds).split(',');
+                relics = String(relics).split(',');
 
-                routeIds.forEach(routeId => {
-                    const routeName = 'route_' + routeId;
+                routeIds = [...routeIds, ...relics];
+            }
+        });
 
-                    if (window.markersData[routeName]) {
-                        checkedRoutes.push(window.markersData[routeName]);
-                    }
-                });
+        routeIds = [...new Set(routeIds)];
+        console.log('routeIds', routeIds);
+
+        routeIds.forEach(routeId => {
+            const routeName = 'route_' + routeId;
+
+            if (window.markersData[routeName]) {
+                checkedRoutes.push(window.markersData[routeName]);
             }
         });
 
