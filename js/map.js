@@ -65,17 +65,21 @@ function renderMarkersAndCentering(locations) {
     map.fitBounds(bounds);
 }
 
+function renderDefaultRoutes() {
+    if (window.defaultRoutes) {
+        const defaultRoutesData = window.defaultRoutes.map(routeName => markersData[routeName]).filter(x => x);
+        removeAllInfoWindows();
+        renderMarkersAndCentering(defaultRoutesData);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(() => {
-        if (window.defaultRoutes) {
-            const defaultRoutesData = window.defaultRoutes.map(routeName => markersData[routeName]).filter(x => x);
-            renderMarkersAndCentering(defaultRoutesData);
-        }
-    }, 1000);
+    setTimeout(renderDefaultRoutes, 1000);
 
     $('.js-location-checkbox').on('change', function () {
         const checkedRoutes = [];
         let routeIds = [];
+        let count = 0;
 
         $('.js-location-checkbox').each(function () {
             if (this.checked) {
@@ -84,21 +88,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 relics = String(relics).split(',');
 
                 routeIds = [...routeIds, ...relics];
+
+                count++;
             }
         });
 
-        routeIds = [...new Set(routeIds)];
-        console.log('routeIds', routeIds);
+        if (count) {
+            routeIds = [...new Set(routeIds)];
 
-        routeIds.forEach(routeId => {
-            const routeName = 'route_' + routeId;
+            routeIds.forEach(routeId => {
+                const routeName = 'route_' + routeId;
 
-            if (window.markersData[routeName]) {
-                checkedRoutes.push(window.markersData[routeName]);
-            }
-        });
+                if (window.markersData[routeName]) {
+                    checkedRoutes.push(window.markersData[routeName]);
+                }
+            });
 
-        removeAllInfoWindows();
-        renderMarkersAndCentering(checkedRoutes);
+            removeAllInfoWindows();
+            renderMarkersAndCentering(checkedRoutes);
+        } else {
+            renderDefaultRoutes();
+        }
     });
 });
