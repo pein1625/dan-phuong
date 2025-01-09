@@ -1,5 +1,5 @@
 let map;
-let customInfoWindow;
+let infoWindows = [];
 
 async function initMap() {
     const mapEl = document.getElementById("map");
@@ -11,6 +11,14 @@ async function initMap() {
         center: { lat: 0, lng: 0 },
         mapTypeId: google.maps.MapTypeId.SATELLITE
     });
+}
+
+function removeAllInfoWindows() {
+    infoWindows.forEach(item => {
+        item.close();
+    });
+
+    infoWindows = [];
 }
 
 function renderMarkersAndCentering(locations) {
@@ -49,17 +57,12 @@ function renderMarkersAndCentering(locations) {
         infoWindow.open(map, marker); // Gắn InfoWindow với marker
 
         bounds.extend(marker.getPosition());
+
+        infoWindows.push(infoWindow);
     });
 
     // Fit the map's viewport to the bounds
     map.fitBounds(bounds);
-}
-
-function closeInfoWindow() {
-    if (customInfoWindow) {
-        customInfoWindow.parentNode.removeChild(customInfoWindow);
-        customInfoWindow = null;
-    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -95,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        removeAllInfoWindows();
         renderMarkersAndCentering(checkedRoutes);
     });
 });

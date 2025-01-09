@@ -271,8 +271,8 @@ function placeSyncSlider() {
 
 const getUniqId = () => {
   const ts = `${new Date().getTime()}`.substring(3, 13);
-  const map = [['0', 'a', 'b'], ['1', 'c', 'd'], ['2', 'e', 'f'], ['3', 'g', 'h'], ['4', 'i', 'j'], ['5', 'k', 'l'], ['6', 'm', 'n'], ['7', 'o', 'p'], ['8', 'q', 'r'], ['9', 's', 't']];
-  let id = '';
+  const map = [["0", "a", "b"], ["1", "c", "d"], ["2", "e", "f"], ["3", "g", "h"], ["4", "i", "j"], ["5", "k", "l"], ["6", "m", "n"], ["7", "o", "p"], ["8", "q", "r"], ["9", "s", "t"]];
+  let id = "";
   for (let i = 0; i < ts.length; i++) {
     const n = Number(ts.charAt(i));
     const arr = map[n];
@@ -297,7 +297,7 @@ $(function () {
   $(".search-btn").on("click", function (e) {
     e.stopPropagation();
 
-    $(".search").slideToggle('fast');
+    $(".search").slideToggle("fast");
     $(".search").find("input").focus();
   });
 
@@ -307,41 +307,41 @@ $(function () {
 
   $("html, body").on("click", function () {
     if ($(window).width() >= 1200) {
-      $(".search").slideUp('fast');
+      $(".search").slideUp("fast");
     }
   });
 
-  $('.js-password-field').on('click', '.input-group-text', function (e) {
+  $(".js-password-field").on("click", ".input-group-text", function (e) {
     e.preventDefault();
 
     const $btn = $(this);
-    const $group = $btn.closest('.js-password-field');
-    const $input = $group.find('.form-control');
+    const $group = $btn.closest(".js-password-field");
+    const $input = $group.find(".form-control");
 
-    $group.toggleClass('show-password');
+    $group.toggleClass("show-password");
 
-    if ($group.hasClass('show-password')) {
-      $input.attr('type', 'text');
+    if ($group.hasClass("show-password")) {
+      $input.attr("type", "text");
       $btn.empty().append(`<i class="fal fa-fw fa-eye-slash" />`);
     } else {
-      $input.attr('type', 'password');
+      $input.attr("type", "password");
       $btn.empty().append(`<i class="fal fa-fw fa-eye" />`);
     }
   });
 
   createPostMenu();
 
-  $('.js-daterangepicker').daterangepicker({
+  $(".js-daterangepicker").daterangepicker({
     timePicker: true,
     locale: {
-      format: 'DD/MM/YYYY'
+      format: "DD/MM/YYYY"
     }
   });
 });
 
 function createPostMenu() {
-  const $content = $('.post__content');
-  const $menu = $('.post__menu');
+  const $content = $(".post__content");
+  const $menu = $(".post__menu");
 
   if (!$content.length || !$menu.length) return;
 
@@ -349,10 +349,10 @@ function createPostMenu() {
   let subMenu = null;
   let counter = 0;
 
-  $content.find('h2, h3, h4').each(function () {
+  $content.find("h2, h3, h4").each(function () {
     counter++;
 
-    const headingClass = 'content-heading-' + counter;
+    const headingClass = "content-heading-" + counter;
 
     $(this).addClass(headingClass);
 
@@ -364,18 +364,18 @@ function createPostMenu() {
     };
 
     switch (this.tagName.toLowerCase()) {
-      case 'h2':
+      case "h2":
         subMenu = item.children;
         menu.push(item);
         break;
-      case 'h3':
+      case "h3":
         if (subMenu) {
           subMenu.push(item);
         } else {
           menu.push(item);
         }
         break;
-      case 'h4':
+      case "h4":
         if (subMenu) {
           subMenu.push(item);
         } else {
@@ -386,8 +386,8 @@ function createPostMenu() {
     }
   });
 
-  $menu.removeClass('d-none');
-  const $menuBody = $menu.find('.post__menu-content');
+  $menu.removeClass("d-none");
+  const $menuBody = $menu.find(".post__menu-content");
 
   menu.forEach((item, index) => {
     $menuBody.append(`
@@ -401,81 +401,81 @@ function createPostMenu() {
     });
   });
 
-  $menuBody.on('click', '.post__menu-item, .post__menu-sub-item', function () {
-    const target = $(this).data('target');
+  $menuBody.on("click", ".post__menu-item, .post__menu-sub-item", function () {
+    const target = $(this).data("target");
 
-    const $target = $('.' + target);
+    const $target = $("." + target);
 
     if ($target.length) {
-      $('html,body').animate({
+      $("html,body").animate({
         scrollTop: $target.offset().top - 64
-      }, 'fast');
+      }, "fast");
     }
   });
 }
 
 $(function () {
-  const $route = $('.route');
+  const $route = $(".route");
 
   if (!$route.length) return;
 
-  const $select = $route.find('.route__select');
-  const $dropdown = $route.find('.route__dropdown');
+  const $select = $route.find(".route__select");
+  const $dropdown = $route.find(".route__dropdown");
 
-  $select.on('click', function (e) {
+  $select.on("click", function (e) {
     e.stopPropagation();
-    $dropdown.fadeToggle('fast');
+    $dropdown.fadeToggle("fast");
   });
 
-  $dropdown.on('click', function (e) {
+  $dropdown.on("click", function (e) {
     e.stopPropagation();
   });
 
-  $('html, body').on('click', function () {
-    $dropdown.fadeOut('fast');
+  $("html, body").on("click", function () {
+    $dropdown.fadeOut("fast");
   });
 });
 
 $(function () {
-  $('.js-experience').on('click', function () {
-    $(this).closest('.banner__wrapper').remove();
+  $(".js-experience").on("click", function () {
+    $(this).closest(".banner__wrapper").remove();
   });
 });
 
 $(function () {
   const $window = $(window);
-  const $pageNav = $('.page-nav');
+  const $pageNav = $(".page-nav");
 
   const pageNavIds = [];
 
-  $('.page-nav__nav .s-btn').each(function () {
-    const href = $(this).attr('href');
+  $(".page-nav__nav .s-btn").each(function () {
+    const href = $(this).attr("href");
     pageNavIds.push(href);
   });
 
-  $window.on('scroll', function () {
+  $window.on("scroll", function () {
     const scrollTop = $window.scrollTop();
 
     if (scrollTop > 54) {
-      $pageNav.addClass('is-fixed');
+      $pageNav.addClass("is-fixed");
     } else {
-      $pageNav.removeClass('is-fixed');
+      $pageNav.removeClass("is-fixed");
     }
 
     let target = null;
 
-    $('.js-section').each(function () {
+    $(".js-section").each(function () {
       const $el = $(this);
-      let id = $el.attr('id');
+      let id = $el.attr("id");
 
-      if (id && pageNavIds.includes('#' + id) && $el.isOnScreen()) {
-        target = '#' + id;
+      if (id && pageNavIds.includes("#" + id) && $el.isOnScreen()) {
+        target = "#" + id;
       }
     });
 
     if (target) {
-      $('.page-nav__nav .s-btn').removeClass('active');
-      $(`.page-nav__nav .s-btn[href="${target}"]`).addClass('active');
+      $(".page-nav__nav .s-btn").removeClass("active");
+      $(`.page-nav__nav .s-btn[href="${target}"]`).addClass("active");
     }
   });
 });
